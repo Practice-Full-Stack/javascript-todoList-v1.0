@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Todo v1.0</title>
+</head>
+<body>
+    <div class="container">
+        <div class="addTodos">
+            <h2>Todo List</h2>
+            <!-- TYPE TODO HERE -->
+            <input type="text" id="todoInput" placeholder="Type here...">
+            <!-- CLICK HERE TO ADD -->
+            <span onclick="newElement()" class="addButton">Add</span>
+
+            <!-- LIST TO MANIPULATE -->
+            <ul id="todoList">
+                <li>Stretch in bed</li>
+                <li>Make a cup of coffee</li>
+                <li>Clean the house and go shopping</li>
+                <li>Life weights and do posture exercises</li>
+                <!-- COMPLETED TOD -->
+                <li class="todoCompleted">Live 2021 alcohol free. Keep up the great work!</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Link to our JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
