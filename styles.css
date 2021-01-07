@@ -14,7 +14,7 @@ body {font-family: 'Open Sans', sans-serif;background-color: #262626;color: #FFF
 :root {font-size: 120%;}
 
 /******************************
-THE LIST
+LIST STYLING
 ******************************/
 
 /* remove default space */
@@ -22,31 +22,104 @@ ul {margin: 0;padding: 0;}
 
 /* style list items  */
 ul li {
+    padding: 6px 6px 6px 32px;
     border: solid 1px #eee;
+    background: #3943B7;
     position: relative;
-
-
-
+    transition: 0.2s;
     cursor: pointer;
+    /* make items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-
-
-
+/* dark on hover */
+ul li:hover{background-color:#262626;}
 
 /******************************
-THE TITLE
+LIST CHECKED (JAVASCRIPT)
 ******************************/
 
-h2 {text-align:center;}
-span {width}
+/* item finished */
+ul li.checked {
+    text-decoration: line-through;
+    background: #262626;
+}
 
+/* left-side checkmark */
+ul li.checked::before {
+    /* position and insert */
+    position: absolute;
+    content: '';
+    /* draw with border */
+    border-width: 0 2px 2px 0;
+    border-color: #fff;
+    border-style: solid;
+    /* position and angle */
+    transform: rotate(45deg);
+    left: 16px;
+    top: 10px;
+    /* size */
+    height: 15px;
+    width: 7px;
+}
+
+/******************************
+ LIST ITEM CLOSE (JAVASCRIPT)
+******************************/
+
+/* right-side close button */
+.close-js {
+    padding: 12px 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* hover over close button */
+.close-js:hover {background-color: #f44336; color: #fff}
+
+/******************************
+HEADER STYLES
+******************************/
+
+/* center text and pad input box */
+.header {text-align: center; padding: 30px 40px;}
+
+
+
+
+
+
+
+/************************************************************
+REVIEW THIS CODE
+************************************************************/
+/* clear floats after header */
+/* .header::after {
+    content:"";
+    clear: both;
+    display: table;
+} */
+/************************************************************/
+
+/*
+PICK UP HERE WITH STYLING THE INPUT BOX
+*/
+
+/* input styling */
+input {
+    border-radius: 1px;
+    /* input size */
+    width: 75%;
+}
 
 
 
 /******************************
 THE INPUT AREA
 ******************************/
-
 
 
