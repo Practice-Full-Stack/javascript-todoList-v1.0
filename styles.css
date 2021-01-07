@@ -1,28 +1,45 @@
 /******************************
 GENERAL SETUP
 ******************************/
-
-/* import google font */
+/* google font api */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap');
 
-/* reset the page */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* clear default element border and padding */
+* {box-sizing: border-box;}
+
+/* body and font styling */
+body {font-family: 'Open Sans', sans-serif;background-color: #262626;color: #FFF;}
+
+/* global variable */
+:root {font-size: 120%;}
+
+/******************************
+THE LIST
+******************************/
+
+/* remove default space */
+ul {margin: 0;padding: 0;}
+
+/* style list items  */
+ul li {
+    border: solid 1px #eee;
+    position: relative;
+
+
+
+    cursor: pointer;
 }
 
-/* universal styles */
-body {
-    background-color: #262626;
-    color: #FFF;
-    font-family: 'Open Sans', sans-serif;
-}
+
+
+
 
 /******************************
 THE TITLE
 ******************************/
 
+h2 {text-align:center;}
+span {width}
 
 
 
@@ -33,8 +50,3 @@ THE INPUT AREA
 
 
 
-
-
-/******************************
-THE TODO LIST
-******************************/
