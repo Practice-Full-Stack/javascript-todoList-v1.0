@@ -88,38 +88,60 @@ HEADER STYLES
 /* center text and pad input box */
 .header {text-align: center; padding: 30px 40px;}
 
-
-
-
-
-
-
-/************************************************************
-REVIEW THIS CODE
-************************************************************/
-/* clear floats after header */
-/* .header::after {
-    content:"";
-    clear: both;
-    display: table;
-} */
-/************************************************************/
-
-/*
-PICK UP HERE WITH STYLING THE INPUT BOX
-*/
-
-/* input styling */
-input {
-    border-radius: 1px;
-    /* input size */
-    width: 75%;
-}
-
-
-
 /******************************
 THE INPUT AREA
 ******************************/
 
+input {
+    /* font-size affects total size */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    /* position and size */
+    padding: 10px;
+    margin: 0;
+    width: 75%;
+    float: left;
+    /*  */
+    border: none;
+    border-radius: 1px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    
+}
+
+.addButton {
+    /* font-size affects total size */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    /* position and size */
+    padding: 10px;
+    float: left;
+    width: 25%;
+    /* styling */
+    background: #95F2D9;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    /* border */
+    border: none;
+    border-radius: 1px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.addButton:hover {
+    background-color: #262626;
+    
+    
+    /* inside border effect */
+    border: solid white 0.1px;
+}
+
+
+/* CLEAR FLOATS AFTER HEADER */
+.header::after {
+    content:"";
+    clear: both;
+    display: table;}
+/* otherwise input/add runs underneath the list */
 
