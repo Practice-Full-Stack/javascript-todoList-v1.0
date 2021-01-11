@@ -4,26 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Todo v1.0</title>
+    <title>Small Wins Add Up</title>
 </head>
 <body>
-    <!-- HEADER -->
-    <div id="myDiv" class="header">
-        <h2>Todo List</h2>
-        <input type="text" id="myInput" placeholder="Type here..."> <!-- input box -->
-        <span onclick="newElement()" class="addButton">Add</span> <!-- add button -->
+    <div class="container">
+        <!-- HEADER -->
+        <div id="myDIV" class="header">
+            <h2>Todo List</h2>
+            <input type="text" id="myInput" placeholder="Type here..."> <!-- input box -->
+            <span onclick="newElement()" class="addBtn">Add</span> <!-- add button -->
+        </div>
+        <!-- TODO LIST -->
+        <ul id="myUL">
+            <li class="checked">Organize gmail</li>
+            <li>Read two articles</li>
+            <li>PMI test preparation</li>
+            <li>Daily notes to journal</li>
+        </ul>
     </div>
-    <!-- TODO LIST -->
-    <ul id="myList">
-        <li class="complete">Wake up</li> <!-- auto completed -->
-        <li>Morning run</li>
-        <li>Morning code</li>
-        <li>Exercise (11am)</li>
-        <li>Groceries, relax</li>
-        <li>Evening code (4pm)</li>
-        <li>Evening reading in bed</li>
-    </ul>
-    
     <!-- Link to our JavaScript file -->
     <script src="script.js"></script>
 </body>
