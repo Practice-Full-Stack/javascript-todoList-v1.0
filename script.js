@@ -1,5 +1,5 @@
 /****************************************
-CLOSE BUTTON
+APPEND CLOSE BUTTONS
 ****************************************/
 
 // return specified element's child elements as an object
@@ -18,20 +18,25 @@ for (i = 0; i < listObject.length; i++) {
     listObject[i].appendChild(span);
 }
 
-
 /****************************************
-"CHECKED" SYMBOL FOR LIST ITEMS
+DELETE LIST ITEMS
 ****************************************/
 
-// var list = document.querySelector('ul');
-// list.addEventListener('click', function(param) {
-//     if (param.target.tageName === 'LI') {
-//         param.target.classList.toggle('checked');
-//     }
-// }, false);
+
 
 
 
 /******************************
-ADD LIST ITEMS
+APPEND LIST ITEMS
 ******************************/
+
+
+
+
+
+
+/******************************
+.CHECKED (CSS CLASS)
+******************************/
+
+
